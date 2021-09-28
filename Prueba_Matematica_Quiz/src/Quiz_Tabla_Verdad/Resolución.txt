@@ -1,0 +1,30 @@
+Para la solución de Este Ejercicios de Quiz realizaremos lo siguiente:
+
+1: Crear una Lista de ejercicios en Forma de Matríz, en donde guardaremos los String de los
+    ejercicios, así como la respuesta.
+
+2: La Lista de Ejercicios la crearemos en un Función Externo al 'Main' así mantenemos la prolijidad al ejecutar
+    el programa y retornaremos un String con la lista.
+
+            →Problema al momento de crear función, crearemos una variable global en la clase donde podemos pasarle
+                la lista y acceder a ella desde el Método 'Generar Preguntas'.
+
+Métodos a crear:    → Main
+                    → Generar Preguntas
+                    → Guardar Preguntas (Modificado a 'Lista_Preguntas')
+
+                        →'Lista_Preguntas'→ Guarda en Variable Global Los Ejercicios.
+                                           ○ Los Ejercicios serán almacenados en una Matriz de 10x16.
+                                              10 Serán las cantidad de Ejercicios a Almacenar.
+                                              15 Serán las Líneas a mostrar en el Panel Principal.
+                                                →De Esos 15: ►5 Serán Utilizados para la Letra del Ejercicio.
+                                                             ►5 Serán Utilizados para las Premisas.
+                                                             ►5 Para Opciones de Respuestas.
+                                                             ►1 Para la respuesta correspondiente a la pregunta.
+
+
+                        → 'Generar_Preguntas' → Muestra En Pantalla los Ejercicios haciendo uso de un panel.
+                                                Donde utilizará todas las columnas del Array para mostrar una línea Distinta.
+                                              ○Se Recorrerá el Array con un random donde mostrará al azar el ejercicio
+                                                ►Dentro de un for donde ejecutaremos 5 veces y presentando a cara recorrido
+                                                    un Ejercicio diferente para el usuario.
